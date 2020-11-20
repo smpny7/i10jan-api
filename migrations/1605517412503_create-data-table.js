@@ -40,6 +40,7 @@ exports.up = pgm => {
         in_time: {
             type: 'timestamp',
             notNull: true,
+            default: pgm.func('current_timestamp'),
         },
         out_time: {
             type: 'timestamp',
