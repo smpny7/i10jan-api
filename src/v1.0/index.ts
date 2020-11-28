@@ -16,7 +16,7 @@ router.get('/', (req: express.Request, res: express.Response) => {
             })
         })
         .catch(err => {
-            console.log("[Daily Action]" + err)
+            console.log("[Web Site]" + err)
             res.status(500).json({
                 success: false,
                 msg: 'Could not get from database'
