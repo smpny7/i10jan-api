@@ -8,7 +8,7 @@
         "dev:watch": "ts-node-dev --respawn src/app.ts",
         "clean": "rimraf dist/*",
         "tsc": "tsc",
-        "migrate": "node-pg-migrate",
+        "migrate": "node-pg-migrate up",
         "build": "npm-run-all clean tsc migrate",
         "start": "node ."
     },
