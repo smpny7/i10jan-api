@@ -1,8 +1,9 @@
 require('dotenv').config()
 
 const pg = require("pg")
-const database_url = process.env.DATABASE_URL
-const pgPool = new pg.Pool({database_url})
+const pgPool = new pg.Pool({
+    connectionString: process.env.DATABASE_URL
+})
 
 // =====  MEMBERS TABLE  =======================================================
 
@@ -40,6 +41,7 @@ export class MembersTable {
                     client.query(query, function (err: any, result: any) {
                         if (err)
                             return reject(err)
+                        console.log(result.rows)
                         return resolve(result.rows)
                     })
                 }
