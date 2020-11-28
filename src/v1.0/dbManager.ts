@@ -27,6 +27,26 @@ export class MembersTable {
         })
     }
 
+    static async getInRoomData() {
+        return new Promise((resolve, reject) => {
+            const query = {
+                text: 'SELECT nick_name FROM members WHERE active = $1 AND in_room = $2',
+                values: [true, true],
+            }
+            pgPool.connect(function (err: any, client: any) {
+                if (err) {
+                    return reject(err)
+                } else {
+                    client.query(query, function (err: any, result: any) {
+                        if (err)
+                            return reject(err)
+                        return resolve(result.rows)
+                    })
+                }
+            })
+        })
+    }
+
     static async getMemberSecretData(member_key: string) {
         return new Promise((resolve, reject) => {
             const query = {
@@ -72,8 +92,28 @@ export class MembersTable {
     static async setOutRoom(member_key: string) {
         return new Promise((resolve, reject) => {
             const query = {
-                text: 'UPDATE members SET out_room = false, updated_at = $1 WHERE member_key = $2',
+                text: 'UPDATE members SET in_room = false, updated_at = $1 WHERE member_key = $2',
                 values: [new Date(), member_key],
+            }
+            pgPool.connect(function (err: any, client: any) {
+                if (err) {
+                    return reject(err)
+                } else {
+                    client.query(query, function (err: any) {
+                        if (err)
+                            return reject(err)
+                        else
+                            return resolve()
+                    })
+                }
+            })
+        })
+    }
+
+    static async setAllMemberOutRoom() {
+        return new Promise((resolve, reject) => {
+            const query = {
+                text: 'UPDATE members SET in_room = false',
             }
             pgPool.connect(function (err: any, client: any) {
                 if (err) {
