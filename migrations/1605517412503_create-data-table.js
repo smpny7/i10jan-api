@@ -9,11 +9,11 @@ exports.up = pgm => {
             type: 'string',
             notNull: true,
         },
-        nickname: {
+        nick_name: {
             type: 'string',
             notNull: true,
         },
-        fullname: {
+        full_name: {
             type: 'string',
             notNull: true,
         },
@@ -58,4 +58,6 @@ exports.up = pgm => {
     })
 };
 
-exports.down = pgm => { 'data' };
+exports.down = pgm => {
+    pgm.dropTable('data')
+};
