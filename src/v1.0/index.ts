@@ -54,7 +54,7 @@ router.get('/dailyAction', (req: express.Request, res: express.Response) => {
 
 // -----  QR Scanned Action  ---------------------------------------------------
 
-router.get('/qrScannedAction', (req: express.Request, res: express.Response) => {
+router.post('/qrScannedAction', (req: express.Request, res: express.Response) => {
     MembersTable.memberExistCheck(req.query.member_key as string)
         .then(data => {
             if (data) {
@@ -114,7 +114,7 @@ router.get('/qrScannedAction', (req: express.Request, res: express.Response) => 
 
 // -----  Register Action  -----------------------------------------------------
 
-router.get('/registerAction', (req: express.Request, res: express.Response) => {
+router.post('/registerAction', (req: express.Request, res: express.Response) => {
     DataTable.register(req.query.member_key as string, parseInt(req.query.body_temperature as string), req.query.physical_condition as string, req.query.stifling as string, req.query.fatigue as string, req.query.remarks as string)
         .then(() => {
             res.json({

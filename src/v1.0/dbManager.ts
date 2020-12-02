@@ -84,7 +84,7 @@ export class MembersTable {
                         if (err)
                             return reject(err)
                         else
-                            return resolve()
+                            return resolve(null)
                     })
                 }
             })
@@ -105,7 +105,7 @@ export class MembersTable {
                         if (err)
                             return reject(err)
                         else
-                            return resolve()
+                            return resolve(null)
                     })
                 }
             })
@@ -125,7 +125,7 @@ export class MembersTable {
                         if (err)
                             return reject(err)
                         else
-                            return resolve()
+                            return resolve(null)
                     })
                 }
             })
@@ -204,7 +204,7 @@ export class DataTable {
                             client.query(query, function (err: any) {
                                 if (err)
                                     return reject(err)
-                                return resolve()
+                                return resolve(null)
                             })
                         }
                     })
