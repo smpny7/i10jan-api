@@ -1,0 +1,24 @@
+version: '3.7'
+
+services:
+  db:
+    image: postgres:12-alpine
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_DB: postgres
+      DATABASE_HOST: localhost
+    ports:
+      - "5432:5432"
+
+  api:
+    image: 'node:12-alpine'
+    volumes:
+      - './:/api:cached'
+    working_dir: '/api'
+    environment:
+      HOST: '0.0.0.0'
+    ports:
+      - '80:80'
+    command: 'sh -c "npm install && npm run migrate && npm run dev"'
