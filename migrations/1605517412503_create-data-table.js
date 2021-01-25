@@ -33,10 +33,6 @@ exports.up = pgm => {
             type: 'string',
             notNull: true,
         },
-        remarks: {
-            type: 'string',
-            default: null
-        },
         in_time: {
             type: 'timestamp',
             notNull: true,

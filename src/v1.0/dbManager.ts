@@ -171,7 +171,7 @@ export class DataTable {
         })
     }
 
-    static async register(member_key: string, body_temperature: number, physical_condition: string, stifling: string, fatigue: string, remarks: string) {
+    static async register(member_key: string, body_temperature: number, physical_condition: string, stifling: string, fatigue: string) {
         return new Promise((resolve, reject) => {
             MembersTable.getMemberSecretData(member_key)
                 .then(result => {
@@ -183,8 +183,8 @@ export class DataTable {
                         connectionString: connectionString,
                     })
                     const query = {
-                        text: 'INSERT INTO data (member_key, nick_name, full_name, body_temperature, physical_condition, stifling, fatigue, remarks, in_time) values($1, $2, $3, $4, $5, $6, $7, $8, $9)',
-                        values: [member_key, (result as Result).nick_name, (result as Result).full_name, body_temperature, physical_condition, stifling, fatigue, remarks, new Date()],
+                        text: 'INSERT INTO data (member_key, nick_name, full_name, body_temperature, physical_condition, stifling, fatigue, in_time) values($1, $2, $3, $4, $5, $6, $7, $8)',
+                        values: [member_key, (result as Result).nick_name, (result as Result).full_name, body_temperature, physical_condition, stifling, fatigue, new Date()],
                     }
                     client.connect()
                     client.query(query, (err:Error) => {
