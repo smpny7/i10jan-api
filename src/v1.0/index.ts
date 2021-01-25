@@ -115,7 +115,7 @@ router.post('/qrScannedAction', (req: express.Request, res: express.Response) =>
 // -----  Register Action  -----------------------------------------------------
 
 router.post('/registerAction', (req: express.Request, res: express.Response) => {
-    DataTable.register(req.query.member_key as string, parseInt(req.query.body_temperature as string), req.query.physical_condition as string, req.query.stifling as string, req.query.fatigue as string, req.query.remarks as string)
+    DataTable.register(req.query.member_key as string, parseFloat(req.query.body_temperature as string), req.query.physical_condition as string, req.query.stifling as string, req.query.fatigue as string, req.query.remarks as string)
         .then(() => {
             res.json({
                 success: true
