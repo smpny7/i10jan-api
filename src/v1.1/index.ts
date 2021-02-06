@@ -8,6 +8,19 @@ const router = express.Router()
 // -----  Web Site  ------------------------------------------------------------
 
 router.get('/', (req: express.Request, res: express.Response) => {
+    MembersTable.getInRoomNumber()
+        .then(result => {
+            res.render('index', { members: result as number })
+        })
+        .catch(err => {
+            console.log("[Web Site]" + err)
+            res.status(500).send('データベースとの通信に失敗しました')
+        })
+})
+
+// -----  API  -----------------------------------------------------------------
+
+router.get('/api', (req: express.Request, res: express.Response) => {
     MembersTable.getInRoomData()
         .then(result => {
             res.json({
@@ -16,7 +29,7 @@ router.get('/', (req: express.Request, res: express.Response) => {
             })
         })
         .catch(err => {
-            console.log("[Web Site]" + err)
+            console.log("[API]" + err)
             res.status(500).json({
                 success: false,
                 msg: 'Could not get from database'

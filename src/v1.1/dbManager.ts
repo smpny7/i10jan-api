@@ -26,6 +26,25 @@ export class MembersTable {
         })
     }
 
+    static async getInRoomNumber() {
+        return new Promise((resolve, reject) => {
+            const client = new Client({
+                connectionString: connectionString,
+            })
+            const query = {
+                text: 'SELECT nick_name FROM members WHERE active = $1 AND in_room = $2',
+                values: [true, true],
+            }
+            client.connect()
+            client.query(query, (err:Error, result:QueryResult) => {
+                client.end()
+                if (err)
+                    return reject(err)
+                return resolve(result.rows.length)
+            })
+        })
+    }
+
     static async getInRoomData() {
         return new Promise((resolve, reject) => {
             const client = new Client({

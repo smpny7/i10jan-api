@@ -13,8 +13,13 @@ app.use((req, res, next) => {
 })
 
 app.use(express.json())
-app.use(express.urlencoded({ extended: true }))
+app.use(express.urlencoded({extended: true}))
 
 app.use('/v1.0/', router1_0)
 app.use('/v1.1/', router1_1)
-app.listen(process.env.PORT || 80, () => { console.log('[INFO] Listening on port ' + (process.env.PORT || 80) + '...') })
+app.use('/public', express.static(__dirname + '/../public'))
+
+app.set('view engine', 'ejs')
+app.listen(process.env.PORT || 80, () => {
+    console.log('[INFO] Listening on port ' + (process.env.PORT || 80) + '...')
+})
