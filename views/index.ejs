@@ -3,23 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.gstatic.com" rel="preconnect">
-    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../public/images/oucrc.png">
     <link href="../public/styles/style.css" rel="stylesheet">
-    <% const title = members ? 'Open' : 'Sorry' %>
-    <% const subtitle = members ? 'Welcome' : 'No One is Here' %>
-    <% const image = members ? 'open' : 'close' %>
-    <% const image_style = members ? 'top-1/2' : ' top-2/3' %>
+    <% const title = members ? 'Open' : 'Closed' %>
+    <% const image = members ? 'dnsnkn_open' : 'dnsnkn_close' %>
+    <% const style = members ? 'md:w-4/5' : 'md:w-2/3' %>
     <title><%= title %></title>
 </head>
 <body>
-<main class="container mx-auto">
+<main class="container h-full mx-auto">
+    <img class="bottom-0 fixed left-0 m-auto right-0 top-0 <%= style %>" src="../public/images/<%= image %>.jpg" alt="<%= title %>">
     <a href="https://oucrc.net"><img class="fixed right-3 top-3 w-16" src="../public/images/oucrc.png" alt="Logo"></a>
-    <h1 class="font-default fixed left-0 right-0 text-7xl sm:text-9xl text-center top-1/4 sm:top-1/5">
-        <%= title %>
-    </h1>
-    <p class="font-default fixed left-0 right-0 text-2xl sm:text-4xl text-center text-gray-400 top-19/50"><%= subtitle %></p>
-    <img class="fixed left-0 mx-auto right-0 <%= image_style %>" src="../public/images/<%= image %>.gif" alt="Close">
 </main>
 </body>
 </html>

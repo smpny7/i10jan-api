@@ -11206,8 +11206,16 @@ video {
   clear: none;
 }
 
-.font-default {
-  font-family: Rock Salt;
+.font-sans {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.font-serif {
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+}
+
+.font-mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 .font-thin {
@@ -19045,20 +19053,6 @@ video {
   left: -100%;
 }
 
-.inset-1\/5 {
-  top: 20%;
-  right: 20%;
-  bottom: 20%;
-  left: 20%;
-}
-
-.inset-19\/50 {
-  top: 38%;
-  right: 38%;
-  bottom: 38%;
-  left: 38%;
-}
-
 .inset-y-0 {
   top: 0px;
   bottom: 0px;
@@ -19907,26 +19901,6 @@ video {
 .-inset-x-full {
   right: -100%;
   left: -100%;
-}
-
-.inset-y-1\/5 {
-  top: 20%;
-  bottom: 20%;
-}
-
-.inset-x-1\/5 {
-  right: 20%;
-  left: 20%;
-}
-
-.inset-y-19\/50 {
-  top: 38%;
-  bottom: 38%;
-}
-
-.inset-x-19\/50 {
-  right: 38%;
-  left: 38%;
 }
 
 .top-0 {
@@ -21287,38 +21261,6 @@ video {
 
 .-left-full {
   left: -100%;
-}
-
-.top-1\/5 {
-  top: 20%;
-}
-
-.right-1\/5 {
-  right: 20%;
-}
-
-.bottom-1\/5 {
-  bottom: 20%;
-}
-
-.left-1\/5 {
-  left: 20%;
-}
-
-.top-19\/50 {
-  top: 38%;
-}
-
-.right-19\/50 {
-  right: 38%;
-}
-
-.bottom-19\/50 {
-  bottom: 38%;
-}
-
-.left-19\/50 {
-  left: 38%;
 }
 
 .resize-none {
@@ -41886,8 +41828,16 @@ video {
     clear: none;
   }
 
-  .sm\:font-default {
-    font-family: Rock Salt;
+  .sm\:font-sans {
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+
+  .sm\:font-serif {
+    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  }
+
+  .sm\:font-mono {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
   .sm\:font-thin {
@@ -49725,20 +49675,6 @@ video {
     left: -100%;
   }
 
-  .sm\:inset-1\/5 {
-    top: 20%;
-    right: 20%;
-    bottom: 20%;
-    left: 20%;
-  }
-
-  .sm\:inset-19\/50 {
-    top: 38%;
-    right: 38%;
-    bottom: 38%;
-    left: 38%;
-  }
-
   .sm\:inset-y-0 {
     top: 0px;
     bottom: 0px;
@@ -50587,26 +50523,6 @@ video {
   .sm\:-inset-x-full {
     right: -100%;
     left: -100%;
-  }
-
-  .sm\:inset-y-1\/5 {
-    top: 20%;
-    bottom: 20%;
-  }
-
-  .sm\:inset-x-1\/5 {
-    right: 20%;
-    left: 20%;
-  }
-
-  .sm\:inset-y-19\/50 {
-    top: 38%;
-    bottom: 38%;
-  }
-
-  .sm\:inset-x-19\/50 {
-    right: 38%;
-    left: 38%;
   }
 
   .sm\:top-0 {
@@ -51967,38 +51883,6 @@ video {
 
   .sm\:-left-full {
     left: -100%;
-  }
-
-  .sm\:top-1\/5 {
-    top: 20%;
-  }
-
-  .sm\:right-1\/5 {
-    right: 20%;
-  }
-
-  .sm\:bottom-1\/5 {
-    bottom: 20%;
-  }
-
-  .sm\:left-1\/5 {
-    left: 20%;
-  }
-
-  .sm\:top-19\/50 {
-    top: 38%;
-  }
-
-  .sm\:right-19\/50 {
-    right: 38%;
-  }
-
-  .sm\:bottom-19\/50 {
-    bottom: 38%;
-  }
-
-  .sm\:left-19\/50 {
-    left: 38%;
   }
 
   .sm\:resize-none {
@@ -72488,8 +72372,16 @@ video {
     clear: none;
   }
 
-  .md\:font-default {
-    font-family: Rock Salt;
+  .md\:font-sans {
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+
+  .md\:font-serif {
+    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  }
+
+  .md\:font-mono {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
   .md\:font-thin {
@@ -80327,20 +80219,6 @@ video {
     left: -100%;
   }
 
-  .md\:inset-1\/5 {
-    top: 20%;
-    right: 20%;
-    bottom: 20%;
-    left: 20%;
-  }
-
-  .md\:inset-19\/50 {
-    top: 38%;
-    right: 38%;
-    bottom: 38%;
-    left: 38%;
-  }
-
   .md\:inset-y-0 {
     top: 0px;
     bottom: 0px;
@@ -81189,26 +81067,6 @@ video {
   .md\:-inset-x-full {
     right: -100%;
     left: -100%;
-  }
-
-  .md\:inset-y-1\/5 {
-    top: 20%;
-    bottom: 20%;
-  }
-
-  .md\:inset-x-1\/5 {
-    right: 20%;
-    left: 20%;
-  }
-
-  .md\:inset-y-19\/50 {
-    top: 38%;
-    bottom: 38%;
-  }
-
-  .md\:inset-x-19\/50 {
-    right: 38%;
-    left: 38%;
   }
 
   .md\:top-0 {
@@ -82569,38 +82427,6 @@ video {
 
   .md\:-left-full {
     left: -100%;
-  }
-
-  .md\:top-1\/5 {
-    top: 20%;
-  }
-
-  .md\:right-1\/5 {
-    right: 20%;
-  }
-
-  .md\:bottom-1\/5 {
-    bottom: 20%;
-  }
-
-  .md\:left-1\/5 {
-    left: 20%;
-  }
-
-  .md\:top-19\/50 {
-    top: 38%;
-  }
-
-  .md\:right-19\/50 {
-    right: 38%;
-  }
-
-  .md\:bottom-19\/50 {
-    bottom: 38%;
-  }
-
-  .md\:left-19\/50 {
-    left: 38%;
   }
 
   .md\:resize-none {
@@ -103090,8 +102916,16 @@ video {
     clear: none;
   }
 
-  .lg\:font-default {
-    font-family: Rock Salt;
+  .lg\:font-sans {
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+
+  .lg\:font-serif {
+    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  }
+
+  .lg\:font-mono {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
   .lg\:font-thin {
@@ -110929,20 +110763,6 @@ video {
     left: -100%;
   }
 
-  .lg\:inset-1\/5 {
-    top: 20%;
-    right: 20%;
-    bottom: 20%;
-    left: 20%;
-  }
-
-  .lg\:inset-19\/50 {
-    top: 38%;
-    right: 38%;
-    bottom: 38%;
-    left: 38%;
-  }
-
   .lg\:inset-y-0 {
     top: 0px;
     bottom: 0px;
@@ -111791,26 +111611,6 @@ video {
   .lg\:-inset-x-full {
     right: -100%;
     left: -100%;
-  }
-
-  .lg\:inset-y-1\/5 {
-    top: 20%;
-    bottom: 20%;
-  }
-
-  .lg\:inset-x-1\/5 {
-    right: 20%;
-    left: 20%;
-  }
-
-  .lg\:inset-y-19\/50 {
-    top: 38%;
-    bottom: 38%;
-  }
-
-  .lg\:inset-x-19\/50 {
-    right: 38%;
-    left: 38%;
   }
 
   .lg\:top-0 {
@@ -113171,38 +112971,6 @@ video {
 
   .lg\:-left-full {
     left: -100%;
-  }
-
-  .lg\:top-1\/5 {
-    top: 20%;
-  }
-
-  .lg\:right-1\/5 {
-    right: 20%;
-  }
-
-  .lg\:bottom-1\/5 {
-    bottom: 20%;
-  }
-
-  .lg\:left-1\/5 {
-    left: 20%;
-  }
-
-  .lg\:top-19\/50 {
-    top: 38%;
-  }
-
-  .lg\:right-19\/50 {
-    right: 38%;
-  }
-
-  .lg\:bottom-19\/50 {
-    bottom: 38%;
-  }
-
-  .lg\:left-19\/50 {
-    left: 38%;
   }
 
   .lg\:resize-none {
@@ -133692,8 +133460,16 @@ video {
     clear: none;
   }
 
-  .xl\:font-default {
-    font-family: Rock Salt;
+  .xl\:font-sans {
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+
+  .xl\:font-serif {
+    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  }
+
+  .xl\:font-mono {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
   .xl\:font-thin {
@@ -141531,20 +141307,6 @@ video {
     left: -100%;
   }
 
-  .xl\:inset-1\/5 {
-    top: 20%;
-    right: 20%;
-    bottom: 20%;
-    left: 20%;
-  }
-
-  .xl\:inset-19\/50 {
-    top: 38%;
-    right: 38%;
-    bottom: 38%;
-    left: 38%;
-  }
-
   .xl\:inset-y-0 {
     top: 0px;
     bottom: 0px;
@@ -142393,26 +142155,6 @@ video {
   .xl\:-inset-x-full {
     right: -100%;
     left: -100%;
-  }
-
-  .xl\:inset-y-1\/5 {
-    top: 20%;
-    bottom: 20%;
-  }
-
-  .xl\:inset-x-1\/5 {
-    right: 20%;
-    left: 20%;
-  }
-
-  .xl\:inset-y-19\/50 {
-    top: 38%;
-    bottom: 38%;
-  }
-
-  .xl\:inset-x-19\/50 {
-    right: 38%;
-    left: 38%;
   }
 
   .xl\:top-0 {
@@ -143773,38 +143515,6 @@ video {
 
   .xl\:-left-full {
     left: -100%;
-  }
-
-  .xl\:top-1\/5 {
-    top: 20%;
-  }
-
-  .xl\:right-1\/5 {
-    right: 20%;
-  }
-
-  .xl\:bottom-1\/5 {
-    bottom: 20%;
-  }
-
-  .xl\:left-1\/5 {
-    left: 20%;
-  }
-
-  .xl\:top-19\/50 {
-    top: 38%;
-  }
-
-  .xl\:right-19\/50 {
-    right: 38%;
-  }
-
-  .xl\:bottom-19\/50 {
-    bottom: 38%;
-  }
-
-  .xl\:left-19\/50 {
-    left: 38%;
   }
 
   .xl\:resize-none {
@@ -164294,8 +164004,16 @@ video {
     clear: none;
   }
 
-  .\32xl\:font-default {
-    font-family: Rock Salt;
+  .\32xl\:font-sans {
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+
+  .\32xl\:font-serif {
+    font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  }
+
+  .\32xl\:font-mono {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
   .\32xl\:font-thin {
@@ -172133,20 +171851,6 @@ video {
     left: -100%;
   }
 
-  .\32xl\:inset-1\/5 {
-    top: 20%;
-    right: 20%;
-    bottom: 20%;
-    left: 20%;
-  }
-
-  .\32xl\:inset-19\/50 {
-    top: 38%;
-    right: 38%;
-    bottom: 38%;
-    left: 38%;
-  }
-
   .\32xl\:inset-y-0 {
     top: 0px;
     bottom: 0px;
@@ -172995,26 +172699,6 @@ video {
   .\32xl\:-inset-x-full {
     right: -100%;
     left: -100%;
-  }
-
-  .\32xl\:inset-y-1\/5 {
-    top: 20%;
-    bottom: 20%;
-  }
-
-  .\32xl\:inset-x-1\/5 {
-    right: 20%;
-    left: 20%;
-  }
-
-  .\32xl\:inset-y-19\/50 {
-    top: 38%;
-    bottom: 38%;
-  }
-
-  .\32xl\:inset-x-19\/50 {
-    right: 38%;
-    left: 38%;
   }
 
   .\32xl\:top-0 {
@@ -174375,38 +174059,6 @@ video {
 
   .\32xl\:-left-full {
     left: -100%;
-  }
-
-  .\32xl\:top-1\/5 {
-    top: 20%;
-  }
-
-  .\32xl\:right-1\/5 {
-    right: 20%;
-  }
-
-  .\32xl\:bottom-1\/5 {
-    bottom: 20%;
-  }
-
-  .\32xl\:left-1\/5 {
-    left: 20%;
-  }
-
-  .\32xl\:top-19\/50 {
-    top: 38%;
-  }
-
-  .\32xl\:right-19\/50 {
-    right: 38%;
-  }
-
-  .\32xl\:bottom-19\/50 {
-    bottom: 38%;
-  }
-
-  .\32xl\:left-19\/50 {
-    left: 38%;
   }
 
   .\32xl\:resize-none {
